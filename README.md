@@ -31,7 +31,7 @@ src/
 
 Below is a waveform screenshot showing successful simulation of datapath execution (e.g., `addi`, `add`, `sub` instructions):
 
-![Waveform Output](src/screenshots/demo_waveform.png)
+![Waveform demo](demo_waveform.png)
 
 ## 🧪 Testing
 
