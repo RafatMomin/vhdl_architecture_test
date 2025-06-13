@@ -1,0 +1,68 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity tb_Extender is
+end tb_Extender;
+
+architecture test of tb_Extender is
+    -- Component Declaration
+    component Extender
+        Port (
+            input_16  : in  STD_LOGIC_VECTOR(15 downto 0);
+            ExtType   : in  STD_LOGIC;
+            output_32 : out STD_LOGIC_VECTOR(31 downto 0)
+        );
+    end component;
+
+    -- Signals for simulation
+    signal input_16  : STD_LOGIC_VECTOR(15 downto 0);
+    signal ExtType   : STD_LOGIC;
+    signal output_32 : STD_LOGIC_VECTOR(31 downto 0);
+
+begin
+    -- Instantiate the Unit Under Test (UUT)
+    uut: Extender port map (
+        input_16  => input_16,
+        ExtType   => ExtType,
+        output_32 => output_32
+    );
+
+    -- Stimulus Process
+    stim_proc: process
+    begin
+        -- Test 1: Zero Extension (ExtType = 0)
+        input_16 <= "0000000000001010"; -- 10 (decimal)
+        ExtType  <= '0';
+        wait for 20 ns;
+
+        -- Test 2: Zero Extension with Large Value
+        input_16 <= "1000000000001010"; -- Large value (32778)
+        ExtType  <= '0';
+        wait for 20 ns;
+
+        -- Test 3: Sign Extension (ExtType = 1)
+        input_16 <= "0000000000001010"; -- 10 (decimal)
+        ExtType  <= '1';
+        wait for 20 ns;
+
+        -- Test 4: Sign Extension with Negative Value
+        input_16 <= "1000000000001010"; -- -32758 (Negative)
+        ExtType  <= '1';
+        wait for 20 ns;
+
+        -- Test 5: Edge Case (MSB = 0)
+        input_16 <= "0111111111111111"; -- Largest Positive (32767)
+        ExtType  <= '1';
+        wait for 20 ns;
+
+        -- Test 6: Edge Case (MSB = 1)
+        input_16 <= "1000000000000000"; -- Smallest Negative (-32768)
+        ExtType  <= '1';
+        wait for 20 ns;
+
+        -- End Simulation
+        wait;
+    end process;
+end test;

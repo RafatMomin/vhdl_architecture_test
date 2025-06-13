@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 15679776 work.tb_dmem -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt1 -id 1-7486e2289a48-67ae9c7f-467d7-945e +__design_bin_path+/home/rafatmom/CprE381/Lab2/Memory

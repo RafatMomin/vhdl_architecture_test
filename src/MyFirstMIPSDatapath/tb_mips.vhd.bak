@@ -1,0 +1,125 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Testbench_MIPS_Datapath is
+end Testbench_MIPS_Datapath;
+
+architecture Behavioral of Testbench_MIPS_Datapath is
+
+    -- Component declaration
+    component MIPS_Datapath is
+        Port (
+            clk       : in  STD_LOGIC;
+            rst       : in  STD_LOGIC;
+            regWrite  : in  STD_LOGIC;
+            nAdd_Sub  : in  STD_LOGIC;
+            ALUSrc    : in  STD_LOGIC;
+            rs, rt, rd: in  STD_LOGIC_VECTOR (4 downto 0);
+            immediate : in  STD_LOGIC_VECTOR (31 downto 0);
+            readData1, readData2 : out  STD_LOGIC_VECTOR (31 downto 0);
+            result    : out  STD_LOGIC_VECTOR (31 downto 0)
+        );
+    end component;
+
+    -- Signal declarations
+    signal clk, rst, regWrite, nAdd_Sub, ALUSrc : STD_LOGIC;
+    signal rs, rt, rd : STD_LOGIC_VECTOR (4 downto 0);
+    signal immediate : STD_LOGIC_VECTOR (31 downto 0);
+    signal readData1, readData2, result : STD_LOGIC_VECTOR (31 downto 0);
+
+    -- Clock period constant
+    constant clk_period : time := 10 ns;
+
+begin
+
+    -- Instantiate the Unit Under Test (UUT)
+    uut: MIPS_Datapath
+        Port map (
+            clk => clk,
+            rst => rst,
+            regWrite => regWrite,
+            nAdd_Sub => nAdd_Sub,
+            ALUSrc => ALUSrc,
+            rs => rs,
+            rt => rt,
+            rd => rd,
+            immediate => immediate,
+            readData1 => readData1,
+            readData2 => readData2,
+            result => result
+        );
+
+    -- Clock generation process
+    clk_process : process
+    begin
+        while true loop
+            clk <= '0';
+            wait for clk_period/2;
+            clk <= '1';
+            wait for clk_period/2;
+        end loop;
+    end process;
+
+    -- Stimulus process
+    stim_proc: process
+    begin
+        -- Initialize all signals
+        rst <= '0';
+        clk <= '0';
+        regWrite <= '0';
+        nAdd_Sub <= '0';
+        ALUSrc <= '0';
+        rs <= (others => '0');
+        rt <= (others => '0');
+        rd <= (others => '0');
+        immediate <= (others => '0');
+
+        -- Apply reset
+        rst <= '1';
+        wait for clk_period;
+        rst <= '0';
+
+        -- Test cases
+        -- ADDI instructions
+        regWrite <= '1';
+        ALUSrc <= '1';
+        -- Load immediate values into registers
+        rd <= "00001"; immediate <= "00000000000000000000000000000001"; wait for clk_period; -- $1 = 1
+        rd <= "00010"; immediate <= "00000000000000000000000000000010"; wait for clk_period; -- $2 = 2
+        rd <= "00011"; immediate <= "00000000000000000000000000000011"; wait for clk_period; -- $3 = 3
+        rd <= "00100"; immediate <= "00000000000000000000000000000100"; wait for clk_period; -- $4 = 4
+        rd <= "00101"; immediate <= "00000000000000000000000000000101"; wait for clk_period; -- $5 = 5
+        rd <= "00110"; immediate <= "00000000000000000000000000000110"; wait for clk_period; -- $6 = 6
+        rd <= "00111"; immediate <= "00000000000000000000000000000111"; wait for clk_period; -- $7 = 7
+        rd <= "01000"; immediate <= "00000000000000000000000000001000"; wait for clk_period; -- $8 = 8
+        rd <= "01001"; immediate <= "00000000000000000000000000001001"; wait for clk_period; -- $9 = 9
+        rd <= "01010"; immediate <= "00000000000000000000000000001010"; wait for clk_period; -- $10 = 10
+
+        -- ADD and SUB instructions
+        ALUSrc <= '0'; -- Use values from registers
+
+        nAdd_Sub <= '0'; rs <= "00001"; rt <= "00010"; rd <= "01011"; wait for clk_period; -- $11 = $1 + $2
+        nAdd_Sub <= '1'; rs <= "01011"; rt <= "00011"; rd <= "01100"; wait for clk_period; -- $12 = $11 - $3
+        nAdd_Sub <= '0'; rs <= "01100"; rt <= "00100"; rd <= "01101"; wait for clk_period; -- $13 = $12 + $4
+        nAdd_Sub <= '1'; rs <= "01101"; rt <= "00101"; rd <= "01110"; wait for clk_period; -- $14 = $13 - $5
+        nAdd_Sub <= '0'; rs <= "01110"; rt <= "00110"; rd <= "01111"; wait for clk_period; -- $15 = $14 + $6
+        nAdd_Sub <= '1'; rs <= "01111"; rt <= "00111"; rd <= "10000"; wait for clk_period; -- $16 = $15 - $7
+        nAdd_Sub <= '0'; rs <= "10000"; rt <= "01000"; rd <= "10001"; wait for clk_period; -- $17 = $16 + $8
+        nAdd_Sub <= '1'; rs <= "10001"; rt <= "01001"; rd <= "10010"; wait for clk_period; -- $18 = $17 - $9
+        nAdd_Sub <= '0'; rs <= "10010"; rt <= "01010"; rd <= "10011"; wait for clk_period; -- $19 = $18 + $10
+
+        -- ADDI with negative immediate
+        ALUSrc <= '1';
+        rd <= "10100"; immediate <= "11111111111111111111111111011101"; wait for clk_period; -- $20 = -35
+
+        -- ADD instruction with $20
+        ALUSrc <= '0'; nAdd_Sub <= '0';
+        rs <= "10011"; rt <= "10100"; rd <= "10101"; wait for clk_period; -- $21 = $19 + $20
+
+        -- Test complete
+        wait;
+    end process;
+
+end Behavioral;

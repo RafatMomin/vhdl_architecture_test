@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 15679776 work.testbench_mips_datapath -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt1 -id 1-7486e228c89d-67c4ad57-60d52-33b3 +__design_bin_path+/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath

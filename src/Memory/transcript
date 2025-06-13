@@ -1,0 +1,236 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:09:43 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 12:09:43 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:09:48 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_dmem
+# -- Compiling architecture Behavioral of tb_dmem
+# End time: 12:09:48 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_dmem -voptargs=+acc
+# vsim work.tb_dmem -voptargs="+acc" 
+# Start time: 12:10:05 on Feb 17,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_dmem(behavioral)#1
+# Loading work.mem(rtl)#1
+add wave -position insertpoint sim:/tb_dmem/*
+run 100
+run 100
+quit -sim
+# End time: 12:13:21 on Feb 17,2025, Elapsed time: 0:03:16
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:13:47 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 12:13:47 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:13:51 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_dmem
+# -- Compiling architecture Behavioral of tb_dmem
+# End time: 12:13:51 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_dmem
+# vsim -voptargs="+acc" work.tb_dmem 
+# Start time: 12:13:59 on Feb 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_dmem(behavioral)#1
+# Loading work.mem(rtl)#1
+add wave -position insertpoint sim:/tb_dmem/*
+run 100
+run 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+mem
+# wrong # args: should be "mem subcommand ?arg ...?"
+load
+# wrong # args: should be "load file ?pkg? ?interp?"
+-infile
+# invalid command name "-infile"
+dmem.hex
+# invalid command name "dmem.hex"
+-format
+# invalid command name "-format"
+hex
+# invalid command name "hex"
+/tb_dmem/dmem/ram
+# invalid command name "/tb_dmem/dmem/ram"
+mem
+# wrong # args: should be "mem subcommand ?arg ...?"
+load
+# wrong # args: should be "load file ?pkg? ?interp?"
+-infile
+# invalid command name "-infile"
+mem
+# wrong # args: should be "mem subcommand ?arg ...?"
+load
+# wrong # args: should be "load file ?pkg? ?interp?"
+-infile
+# invalid command name "-infile"
+dmem.hex
+# invalid command name "dmem.hex"
+-format
+# invalid command name "-format"
+hex
+# invalid command name "hex"
+/tb_dmem/dmem/ram dmem.hex -format hex /tb_dmem/dmem/ram
+# invalid command name "/tb_dmem/dmem/ram"
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+quit -sim
+# End time: 12:34:04 on Feb 17,2025, Elapsed time: 0:20:05
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:34:11 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 12:34:11 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 12:34:15 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_dmem
+# -- Compiling architecture Behavioral of tb_dmem
+# End time: 12:34:15 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_dmem
+# vsim -voptargs="+acc" work.tb_dmem 
+# Start time: 12:34:21 on Feb 17,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_dmem(behavioral)#1
+# Loading work.mem(rtl)#1
+add wave -position insertpoint sim:/tb_dmem/*
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+# (vsim-3659) Too many digits (10) in data on line 15 of file "dmem.hex". (Max is 8.)
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+# (vsim-3659) Too many digits (10) in data on line 15 of file "dmem.hex". (Max is 8.)
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+# (vsim-3659) Too many digits (10) in data on line 15 of file "dmem.hex". (Max is 8.)
+quit -sim
+# End time: 12:35:49 on Feb 17,2025, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_dmem
+# vsim -voptargs="+acc" work.tb_dmem 
+# Start time: 12:36:05 on Feb 17,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_dmem(behavioral)#1
+# Loading work.mem(rtl)#1
+add wave -position insertpoint sim:/tb_dmem/*
+mem
+# wrong # args: should be "mem subcommand ?arg ...?"
+load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+# wrong # args: should be "load file ?pkg? ?interp?"
+mem load -infinite dmem.hex -format hex /tb_dmem/dmem/ram
+# ** UI-Msg (Error): (vsim-4003) Invalid option '-infinite'.
+# Usage: mem load [-infile <filename>] [-format <format>] [-filltype <filltype>] [-fillradix <radix>] [-filldata <patterndata>] [-skip <Nwords>] [-truncate] [-startaddress <st>] [-endaddress <end>] [-update_properties] [<hierpath>]
+# 
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+# (vsim-3659) Too many digits (10) in data on line 15 of file "dmem.hex". (Max is 8.)
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+run 100
+run 100
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+mem
+# wrong # args: should be "mem subcommand ?arg ...?"
+load
+# wrong # args: should be "load file ?pkg? ?interp?"
+-infile
+# invalid command name "-infile"
+dmem.hex
+# invalid command name "dmem.hex"
+-format
+# invalid command name "-format"
+hex
+# invalid command name "hex"
+/tb_dmem/dmem/ram
+# invalid command name "/tb_dmem/dmem/ram"
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+run 100
+quit -sim
+# End time: 12:51:09 on Feb 17,2025, Elapsed time: 0:15:04
+# Errors: 0, Warnings: 0

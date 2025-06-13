@@ -1,0 +1,109 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity tb_dmem is
+end tb_dmem;
+
+architecture Behavioral of tb_dmem is
+
+    -- Component declaration
+    component mem is
+        generic (
+            DATA_WIDTH : natural := 32;
+            ADDR_WIDTH : natural := 10
+        );
+        port (
+            clk  : in  std_logic;
+            addr : in  std_logic_vector((ADDR_WIDTH-1) downto 0);
+            data : in  std_logic_vector((DATA_WIDTH-1) downto 0);
+            we   : in  std_logic;
+            q    : out std_logic_vector((DATA_WIDTH-1) downto 0)
+        );
+    end component;
+
+    -- Signal declarations
+    signal clk : std_logic := '0';
+    signal addr : std_logic_vector(9 downto 0) := (others => '0');
+    signal data : std_logic_vector(31 downto 0) := (others => '0');
+    signal we : std_logic := '0';
+    signal q : std_logic_vector(31 downto 0);
+    signal read_data : std_logic_vector(31 downto 0);
+
+    -- Clock generation
+    constant clk_period : time := 10 ns;
+
+begin
+
+    -- Instantiate the Unit Under Test (UUT)
+    dmem: mem
+        generic map (
+            DATA_WIDTH => 32,
+            ADDR_WIDTH => 10
+        )
+        port map (
+            clk => clk,
+            addr => addr,
+            data => data,
+            we => we,
+            q => q
+        );
+
+    -- Clock generation process
+    clk_process : process
+    begin
+        while true loop
+            clk <= '0';
+            wait for clk_period/2;
+            clk <= '1';
+            wait for clk_period/2;
+        end loop;
+    end process;
+
+    -- Stimulus process
+    stim_proc: process
+    begin
+        -- Initialize signals
+        we <= '0';
+        data <= (others => '0');
+        addr <= (others => '0');
+        read_data <= (others => '0');
+
+        -- Wait for initialization
+        wait for 100 ns;
+
+        -- Command to load hex file in QuestaSim: mem load -infile dmem.hex -format hex /tb_dmem/dmem/ram
+
+        -- Read initial values
+        for i in 0 to 9 loop
+            addr <= std_logic_vector(to_unsigned(i, 10));
+            we <= '0'; -- Read mode
+            wait for clk_period;
+            read_data <= q; -- Capture the read data
+            wait for clk_period;
+
+            -- Write values to new locations starting at 0x100
+            addr <= std_logic_vector(to_unsigned(256 + i, 10)); -- Address starting at 0x100
+            data <= read_data; -- Data read from initial location
+            we <= '1'; -- Write mode
+            wait for clk_period;
+        end loop;
+
+        -- Wait for 100 ns
+        wait for 100 ns;
+
+        -- Read back written values
+        for i in 0 to 9 loop
+            addr <= std_logic_vector(to_unsigned(256 + i, 10)); -- Address starting at 0x100
+            we <= '0'; -- Read mode
+            wait for clk_period;
+            read_data <= q; -- Capture the read data
+            wait for clk_period;
+        end loop;
+
+        -- Finish simulation
+        wait;
+    end process;
+
+end Behavioral;
+

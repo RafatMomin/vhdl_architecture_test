@@ -1,0 +1,175 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/register.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:26 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RegFile
+# -- Compiling architecture Structural of RegFile
+# End time: 16:47:26 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:26 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd(5): (vcom-1615) Existing entity 'regfile' at /home/rafatmom/CprE381/Lab2/RegFile/register.vhd(6) will be overwritten.
+# -- Compiling entity regfile
+# -- Compiling architecture rtl of regfile
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/dec5_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/dec5_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5to32
+# -- Compiling architecture dataflow of decoder_5to32
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd(6): (vcom-1615) Existing entity 'mux32to1' at /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd(6) will be overwritten.
+# -- Compiling entity mux32to1
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd(14): (vcom-1615) Existing architecture 'mux32to1(Behavioral)' at /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd(14) will be overwritten.
+# -- Compiling architecture Behavioral of mux32to1
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd(6): (vcom-1615) Existing entity 'mux32to1' at /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd(6) will be overwritten.
+# -- Compiling entity mux32to1
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_str.vhd(14): (vcom-1615) Existing architecture 'mux32to1(Behavioral)' at /home/rafatmom/CprE381/Lab2/RegFile/32_1_mux_beh.vhd(14) will be overwritten.
+# -- Compiling architecture Behavioral of mux32to1
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_nbit
+# -- Compiling architecture structural of reg_nbit
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd(4): (vcom-1615) Existing entity 'tb_RegFile' at /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd(5) will be overwritten.
+# -- Compiling entity tb_RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd(7): (vcom-1615) Existing architecture 'tb_RegFile(behavior)' at /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd(8) will be overwritten.
+# -- Compiling architecture behavior of tb_RegFile
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd(5): (vcom-1615) Existing entity 'tb_regfile' at /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd(4) will be overwritten.
+# -- Compiling entity tb_regfile
+# ** Warning: /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd(8): (vcom-1615) Existing architecture 'tb_regfile(behavior)' at /home/rafatmom/CprE381/Lab2/RegFile/tb_register.vhd(7) will be overwritten.
+# -- Compiling architecture behavior of tb_regfile
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_dec5_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_dec5_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5to32
+# -- Compiling architecture behavior of tb_decoder_5to32
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_32_1_mux.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:47:27 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/RegFile/tb_32_1_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_mux32to1
+# -- Compiling architecture Behavioral of tb_mux32to1
+# End time: 16:47:27 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vsim work.tb_regfile
+# vsim work.tb_regfile 
+# Start time: 16:48:38 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_regfile(behavior)#1
+quit -sim
+# End time: 16:48:45 on Feb 13,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+vsim work.tb_regfile -voptargs=+acc
+# vsim work.tb_regfile -voptargs="+acc" 
+# Start time: 16:48:54 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_regfile(behavior)#1
+# Loading work.regfile(rtl)#1
+add wave -position insertpoint sim:/tb_regfile/*
+run 100
+run 100
+run 100
+quit -sim
+# End time: 16:52:55 on Feb 13,2025, Elapsed time: 0:04:01
+# Errors: 0, Warnings: 1

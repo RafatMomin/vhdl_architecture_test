@@ -1,0 +1,556 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+Z2 !s12c _opt2
+R1
+Z3 !s12c _opt1
+R1
+R0
+R1
+R2
+R1
+R3
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 d/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath
+T_opt
+!s110 1740943221
+VCQSFo]o:jI7zEDnBcVhmn0
+Z5 04 23 10 work testbench_mips_datapath behavioral 1
+=1-7486e228c89d-67c4af74-d0e90-35f9
+R1
+Z6 !s12f OEM100
+Z7 !s12b OEM100
+Z8 !s124 OEM100
+Z9 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2024.2;79
+T_opt1
+!s110 1740942679
+VkK_;iRO9C`RNHE]j^:g<U2
+R5
+=1-7486e228c89d-67c4ad57-60d52-33b3
+R1
+R6
+R7
+R8
+R9
+Z12 o-quiet -auto_acc_if_foreign -work work
+R10
+n@_opt1
+R11
+R4
+T_opt2
+!s110 1740943021
+V?aKYc_c5[7L;>]8^<mnlk3
+04 22 8 work tb_myfirstmipsdatapath behavior 1
+=1-7486e228c89d-67c4aead-b358e-3513
+R1
+R6
+R7
+R8
+R9
+R12
+R10
+n@_opt2
+R11
+R4
+Eadder_subtractor
+Z13 w1739494227
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R4
+Z17 8/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+Z18 F/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+l0
+L5 1
+V>F`];=Le5dWW[ZLVDYI9@1
+!s100 W;TmBoMhlTD3ed?QK9FU_1
+Z19 OL;C;2024.2;79
+32
+Z20 !s110 1739494282
+!i10b 1
+Z21 !s108 1739494282.000000
+Z22 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd|
+Z23 !s107 /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd|
+!i113 0
+Z24 o-work work
+Z25 tExplicit 1 CvgOpt 0
+Abehavioral
+R14
+R15
+R16
+DEx4 work 16 adder_subtractor 0 22 >F`];=Le5dWW[ZLVDYI9@1
+!i122 4
+l19
+L17 20
+V?lzW7DTX5ALSzj2<^YUMN0
+!s100 ^MJCEDUihKMa4gPHdXo?20
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R24
+R25
+Ealu
+Z26 w1739495492
+R14
+R15
+R16
+!i122 83
+R4
+R17
+R18
+l0
+L5 1
+VzX54QJzh:kiKM`ATXOL2X2
+!s100 4GaS5[1j7;XZQT91[B?]33
+R19
+32
+Z27 !s110 1740942669
+!i10b 1
+Z28 !s108 1740942669.000000
+R22
+R23
+!i113 0
+R24
+R25
+Abehavioral
+R14
+R15
+R16
+DEx4 work 3 alu 0 22 zX54QJzh:kiKM`ATXOL2X2
+!i122 83
+l15
+L14 11
+V]7NdI[^8B^B:OYl6YE1nI1
+!s100 6E]<4MU:gDADToZdgSGW]1
+R19
+32
+R27
+!i10b 1
+R28
+R22
+R23
+!i113 0
+R24
+R25
+Edffg
+Z29 w1577987096
+R15
+R16
+!i122 80
+R4
+Z30 8/home/rafatmom/CprE381/Lab2/dffg.vhd
+Z31 F/home/rafatmom/CprE381/Lab2/dffg.vhd
+l0
+Z32 L23 1
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R19
+32
+Z33 !s110 1740942600
+!i10b 1
+Z34 !s108 1740942600.000000
+Z35 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/dffg.vhd|
+Z36 !s107 /home/rafatmom/CprE381/Lab2/dffg.vhd|
+!i113 0
+R24
+R25
+Amixed
+R15
+R16
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 80
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R19
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R24
+R25
+Emem
+Z37 w1575899278
+R14
+R15
+R16
+!i122 82
+R4
+Z38 8/home/rafatmom/CprE381/Lab2/mem.vhd
+Z39 F/home/rafatmom/CprE381/Lab2/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R19
+32
+R33
+!i10b 1
+R34
+Z40 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/mem.vhd|
+Z41 !s107 /home/rafatmom/CprE381/Lab2/mem.vhd|
+!i113 0
+R24
+R25
+Artl
+R14
+R15
+R16
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 82
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R19
+32
+R33
+!i10b 1
+R34
+R40
+R41
+!i113 0
+R24
+R25
+Emips_datapath
+Z42 w1739495512
+R14
+R15
+R16
+!i122 84
+R4
+Z43 8/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+Z44 F/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+l0
+L5 1
+VdM[fXI]I;XjVXEQ08g6zl1
+!s100 ^VjWl^:G>f8Q3W[]?Ze:12
+R19
+32
+R27
+!i10b 1
+R28
+Z45 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd|
+Z46 !s107 /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd|
+!i113 0
+R24
+R25
+Astructural
+R14
+R15
+R16
+DEx4 work 13 mips_datapath 0 22 dM[fXI]I;XjVXEQ08g6zl1
+!i122 84
+l54
+L19 74
+VnG[zYzQbXFoI^Fho^Xb:z1
+!s100 oFDWJS5jb[gV?^H>=[>4=1
+R19
+32
+R27
+!i10b 1
+R28
+R45
+R46
+!i113 0
+R24
+R25
+Emux2to1
+Z47 w1739495500
+R15
+R16
+!i122 87
+R4
+Z48 8/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+Z49 F/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+l0
+L4 1
+V`FLI`IP_ma`[gFIn90O2^1
+!s100 MTSYo__nb__AQcPLjD]cn3
+R19
+32
+R27
+!i10b 1
+R28
+Z50 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd|
+Z51 !s107 /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd|
+!i113 0
+R24
+R25
+Abehavioral
+R15
+R16
+DEx4 work 7 mux2to1 0 22 `FLI`IP_ma`[gFIn90O2^1
+!i122 87
+l14
+L13 11
+VT6ZC=VCH:7NF1cM;?nFU]2
+!s100 UObWBgcR_o191;UF=nm<Z2
+R19
+32
+R27
+!i10b 1
+R28
+R50
+R51
+!i113 0
+R24
+R25
+Eregfile
+Z52 w1739495402
+R14
+R15
+R16
+!i122 86
+R4
+Z53 8/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+Z54 F/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+l0
+L5 1
+VbS5Ejez?<3HGO]n5PJnAa2
+!s100 `]MJZLc<WePAXj2bLNamc3
+R19
+32
+R27
+!i10b 1
+R28
+Z55 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd|
+Z56 !s107 /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd|
+!i113 0
+R24
+R25
+Abehavioral
+R14
+R15
+R16
+DEx4 work 7 regfile 0 22 bS5Ejez?<3HGO]n5PJnAa2
+!i122 86
+l22
+L19 18
+V4J==WDJUifEGHk14keVZM1
+!s100 <Ck6G?ez6=1hnWAXAfIgg1
+R19
+32
+R27
+!i10b 1
+R28
+R55
+R56
+!i113 0
+R24
+R25
+Etb_dffg
+Z57 w1580338086
+R15
+R16
+!i122 81
+R4
+Z58 8/home/rafatmom/CprE381/Lab2/tb_dffg.vhd
+Z59 F/home/rafatmom/CprE381/Lab2/tb_dffg.vhd
+l0
+R32
+VEhC826iNlPK<H5[>Kb68Y3
+!s100 _@1Y`b4>C@@3dFKeCkFbz1
+R19
+32
+R33
+!i10b 1
+R34
+Z60 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/tb_dffg.vhd|
+Z61 !s107 /home/rafatmom/CprE381/Lab2/tb_dffg.vhd|
+!i113 0
+R24
+R25
+Abehavior
+R15
+R16
+DEx4 work 7 tb_dffg 0 22 EhC826iNlPK<H5[>Kb68Y3
+!i122 81
+l45
+L27 75
+VLD2Ne7]eIUQBQzKVG@e681
+!s100 McQ;1U@Ti8TCBh>42ldW82
+R19
+32
+R33
+!i10b 1
+R34
+R60
+R61
+!i113 0
+R24
+R25
+Etb_mips_datapath
+Z62 w1739494661
+R14
+R15
+R16
+!i122 25
+R4
+Z63 8/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+Z64 F/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+l0
+L5 1
+VG0GnTko@7KOSKnCTRKXFG3
+!s100 m=@:j2iGNo@_a12TA^4Z23
+R19
+32
+Z65 !s110 1739494850
+!i10b 1
+Z66 !s108 1739494850.000000
+Z67 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd|
+Z68 !s107 /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd|
+!i113 0
+R24
+R25
+Abehavior
+R14
+R15
+R16
+DEx4 work 16 tb_mips_datapath 0 22 G0GnTko@7KOSKnCTRKXFG3
+!i122 25
+l41
+L8 98
+Vmi=:5i_gMIHP0AeM^85A?2
+!s100 hjQB0YoH;hEIgPn?neGfm1
+R19
+32
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 0
+R24
+R25
+Atest
+R15
+R16
+DEx4 work 16 tb_mips_datapath 0 22 l8ONfUJLMe<bc@>@6BjO@2
+!i122 1
+l30
+L7 81
+Vz32dN`hKLVCTMfY9Ul9ie2
+!s100 5]`RV9^`k=<GUOU?Wi7_52
+R19
+32
+!s110 1739493905
+!i10b 1
+!s108 1739493905.000000
+R67
+R68
+!i113 0
+R24
+R25
+w1739493900
+Etb_myfirstmipsdatapath
+Z69 w1739494194
+R14
+R15
+R16
+!i122 7
+R4
+R63
+R64
+l0
+L5 1
+VLoFz2fo_L3CMQOXj;9S:F1
+!s100 iF2oS2iej:njQ]GO=N^?@1
+R19
+32
+R20
+!i10b 1
+R21
+R67
+R68
+!i113 0
+R24
+R25
+Abehavior
+R14
+R15
+R16
+DEx4 work 22 tb_myfirstmipsdatapath 0 22 LoFz2fo_L3CMQOXj;9S:F1
+!i122 7
+l19
+L8 57
+Vb<0Aefkz]H`725hRCo2za3
+!s100 A_EH53Q5MeOYFH93=_3K33
+R19
+32
+R20
+!i10b 1
+R21
+R67
+R68
+!i113 0
+R24
+R25
+Etestbench_mips_datapath
+Z70 w1740942088
+R14
+R15
+R16
+!i122 85
+R4
+R63
+R64
+l0
+L5 1
+VOnMdT5]=MhQVGZ=?ST_W^2
+!s100 PGjdXF?Ne@OhcKWVJR@ED3
+R19
+32
+R27
+!i10b 1
+R28
+R67
+R68
+!i113 0
+R24
+R25
+Abehavioral
+R14
+R15
+R16
+DEx4 work 23 testbench_mips_datapath 0 22 OnMdT5]=MhQVGZ=?ST_W^2
+!i122 85
+l34
+L8 204
+VBDl?AeISDZ12E[Y`2jFMl3
+!s100 z?h31cd]oiY5?do?7RmCf0
+R19
+32
+R27
+!i10b 1
+R28
+R67
+R68
+!i113 0
+R24
+R25

@@ -1,0 +1,175 @@
+m255
+K4
+z2
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+Z2 !s12c _opt
+R1
+!s12c _opt1
+R1
+R2
+R1
+R2
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/rafatmom/CprE381/Lab2/Memory
+T_opt
+!s110 1739496787
+V;J2e9E[93bEkG:3LVZBLf1
+Z4 04 7 10 work tb_dmem behavioral 1
+=1-7486e2289a48-67ae9d53-8cccc-9595
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2024.2;79
+R3
+T_opt1
+!s110 1739496575
+V_NVC8bjHW8k[ONc`o[W=T3
+04 7 8 work tb_dmem behavior 1
+=1-7486e2289a48-67ae9c7f-467d7-945e
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt1
+R11
+R3
+T_opt2
+!s110 1739816039
+VA8;4IQ0DgzP]J2<m@b_<z1
+R4
+=1-7486e228c89d-67b37c67-467e1-281a
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work +acc
+R10
+n@_opt2
+R11
+R3
+Emem
+Z12 w1575899278
+Z13 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+R3
+Z16 8/home/rafatmom/CprE381/Lab2/mem.vhd
+Z17 F/home/rafatmom/CprE381/Lab2/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+Z18 OL;C;2024.2;79
+32
+Z19 !s110 1739817251
+!i10b 1
+Z20 !s108 1739817251.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/mem.vhd|
+Z22 !s107 /home/rafatmom/CprE381/Lab2/mem.vhd|
+!i113 0
+Z23 o-work work
+Z24 tExplicit 1 CvgOpt 0
+Artl
+R13
+R14
+R15
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 23
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R23
+R24
+Etb_dmem
+Z25 w1739816020
+R13
+R14
+R15
+!i122 24
+R3
+Z26 8/home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd
+Z27 F/home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd
+l0
+L5 1
+V73Vca7V6f][j>Wbz=j91i2
+!s100 dgaZV94^f?NJC87^@f>i=3
+R18
+32
+Z28 !s110 1739817255
+!i10b 1
+Z29 !s108 1739817255.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd|
+Z31 !s107 /home/rafatmom/CprE381/Lab2/Memory/tb_memory.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R13
+R14
+R15
+Z32 DEx4 work 7 tb_dmem 0 22 73Vca7V6f][j>Wbz=j91i2
+!i122 24
+l36
+Z33 L8 101
+Z34 V5YMe^FlffV3R;RdaB^AON0
+Z35 !s100 ^YYFKQ<VAzNEi?2?OlSbm0
+R18
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R23
+R24
+Abehavior
+R13
+R14
+R15
+DEx4 work 7 tb_dmem 0 22 okQAHoLeOWS<MYI4]E?l:3
+!i122 8
+l35
+L8 73
+VJMHSleW<=YkmSbS:7HVV80
+!s100 2?>^F?Smn8B4_0::2F_D20
+R18
+32
+!s110 1739496568
+!i10b 1
+!s108 1739496568.000000
+R30
+R31
+!i113 0
+R23
+R24
+w1739496557

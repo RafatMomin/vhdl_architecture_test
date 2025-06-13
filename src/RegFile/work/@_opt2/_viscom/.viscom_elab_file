@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 11747616 work.tb_mux32to1 -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 1-7486e2289a48-67ae708d-6b33d-5118 +__design_bin_path+/home/rafatmom/CprE381/Lab2/RegFile +__betafsm

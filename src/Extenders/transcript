@@ -1,0 +1,148 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:07:10 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Extender
+# -- Compiling architecture Behavioral of Extender
+# ** Error: /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd(20): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd(23): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Note: /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd(26): VHDL Compiler exiting
+# End time: 13:07:10 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:07:10 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_Extender
+# -- Compiling architecture test of tb_Extender
+# End time: 13:07:10 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_extender -voptargs=+acc
+# vsim work.tb_extender -voptargs="+acc" 
+# Start time: 13:07:27 on Feb 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd(26): (vopt-1447) Instance "uut" is bound to entity "work.extender" that has no architectures.
+# ** Warning: /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd(26): (vopt-3473) Component instance "uut : Extender" is not bound.
+#         Region: /tb_Extender
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_extender(test)#1
+# ** Error: (vsim-3173) Entity '/home/rafatmom/CprE381/Lab2/Extenders/work.extender' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 13:07:28 on Feb 17,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:10:31 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Extender
+# -- Compiling architecture Behavioral of Extender
+# End time: 13:10:31 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:10:34 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Extender_tb
+# -- Compiling architecture Behavioral of Extender_tb
+# End time: 13:10:34 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_extender
+# vsim -voptargs="+acc" work.tb_extender 
+# Start time: 13:10:40 on Feb 17,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_extender(test)#1
+# ** Error: (vsim-3173) Entity '/home/rafatmom/CprE381/Lab2/Extenders/work.extender' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 13:10:40 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:11:21 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Extender
+# -- Compiling architecture Behavioral of Extender
+# End time: 13:11:21 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:11:21 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/Extenders/tb_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Extender_tb
+# -- Compiling architecture Behavioral of Extender_tb
+# End time: 13:11:21 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vsim -voptargs=+acc work.extender_tb
+# vsim -voptargs="+acc" work.extender_tb 
+# Start time: 13:11:41 on Feb 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.extender_tb(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.extender(behavioral)#1
+add wave -position insertpoint sim:/extender_tb/*
+run 100
+run 100
+run 100
+quit -sim
+# End time: 13:14:33 on Feb 17,2025, Elapsed time: 0:02:52
+# Errors: 0, Warnings: 1

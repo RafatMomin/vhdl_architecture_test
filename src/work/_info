@@ -1,0 +1,361 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/rafatmom/CprE381/Lab2
+T_opt
+!s110 1738881039
+VInQh;NozTmhO^VzIeM8Al2
+04 10 3 work tb_regfile sim 1
+=1-7486e228c89d-67a5380f-4c557-3dd2
+R0
+Z2 !s12f OEM100
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 !s135 nogc
+Z6 o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2024.2;79
+R1
+T_opt1
+!s110 1738881287
+VULdkoLdR@IK?<A62>CS^V2
+04 7 8 work tb_dffg behavior 1
+=1-7486e228c89d-67a53907-ca6ec-3f08
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+R1
+Edffg
+Z9 w1577987096
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+R1
+Z12 8/home/rafatmom/CprE381/Lab2/dffg.vhd
+Z13 F/home/rafatmom/CprE381/Lab2/dffg.vhd
+l0
+Z14 L23 1
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+Z15 OL;C;2024.2;79
+32
+Z16 !s110 1738881277
+!i10b 1
+Z17 !s108 1738881277.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/dffg.vhd|
+Z19 !s107 /home/rafatmom/CprE381/Lab2/dffg.vhd|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 CvgOpt 0
+Amixed
+R10
+R11
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 13
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Emem
+Z22 w1575899278
+Z23 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R10
+R11
+!i122 15
+R1
+Z24 8/home/rafatmom/CprE381/Lab2/mem.vhd
+Z25 F/home/rafatmom/CprE381/Lab2/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R15
+32
+R16
+!i10b 1
+R17
+Z26 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/mem.vhd|
+Z27 !s107 /home/rafatmom/CprE381/Lab2/mem.vhd|
+!i113 0
+R20
+R21
+Artl
+R23
+R10
+R11
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 15
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R15
+32
+R16
+!i10b 1
+R17
+R26
+R27
+!i113 0
+R20
+R21
+En_bit_reg
+Z28 w1738881007
+R23
+R10
+R11
+!i122 11
+R1
+Z29 8/home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd
+Z30 F/home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd
+l0
+L5 1
+VXb1Lh2?S_@E[F9>[bUbeJ1
+!s100 Odd3oQ;49U;gBk6jn1O6b3
+R15
+32
+Z31 !s110 1738881011
+!i10b 1
+Z32 !s108 1738881011.000000
+Z33 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd|
+Z34 !s107 /home/rafatmom/CprE381/Lab2/RegFile/N_bit_reg.vhd|
+!i113 0
+R20
+R21
+Abehavioral
+R23
+R10
+R11
+DEx4 work 9 n_bit_reg 0 22 Xb1Lh2?S_@E[F9>[bUbeJ1
+!i122 11
+l20
+L17 20
+VOFgLg1<STX]T:^]j<Ti8h1
+!s100 k3`W[V;7VJ;z8a8D;_BRV1
+R15
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 0
+R20
+R21
+Ereg_nbit
+Z35 w1738881358
+R10
+R11
+!i122 17
+R1
+R29
+R30
+l0
+L4 1
+Vg7Wz8_@^nG`nQIDNZ4izi2
+!s100 zRGSG;<CJ5CGLD@5NfX7C1
+R15
+32
+Z36 !s110 1738881387
+!i10b 1
+Z37 !s108 1738881387.000000
+R33
+R34
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 8 reg_nbit 0 22 g7Wz8_@^nG`nQIDNZ4izi2
+!i122 17
+l28
+L15 30
+V?g9Kz[f^LKLh<_=;6c1iK1
+!s100 5IO]m3VnBfW<g7Y9ge:9>3
+R15
+32
+R36
+!i10b 1
+R37
+R33
+R34
+!i113 0
+R20
+R21
+Eregfile
+w1738880936
+R23
+R10
+R11
+!i122 10
+R1
+R29
+R30
+l0
+L5 1
+VNiTfb;Vj?GXW90`hjlBX:0
+!s100 S_onaQiggkN8OV57C4:4z1
+R15
+32
+!s110 1738880978
+!i10b 1
+!s108 1738880978.000000
+R33
+R34
+!i113 0
+R20
+R21
+Etb_dffg
+Z38 w1580338086
+R10
+R11
+!i122 14
+R1
+Z39 8/home/rafatmom/CprE381/Lab2/tb_dffg.vhd
+Z40 F/home/rafatmom/CprE381/Lab2/tb_dffg.vhd
+l0
+R14
+VEhC826iNlPK<H5[>Kb68Y3
+!s100 _@1Y`b4>C@@3dFKeCkFbz1
+R15
+32
+R16
+!i10b 1
+R17
+Z41 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/tb_dffg.vhd|
+Z42 !s107 /home/rafatmom/CprE381/Lab2/tb_dffg.vhd|
+!i113 0
+R20
+R21
+Abehavior
+R10
+R11
+DEx4 work 7 tb_dffg 0 22 EhC826iNlPK<H5[>Kb68Y3
+!i122 14
+l45
+L27 75
+VLD2Ne7]eIUQBQzKVG@e681
+!s100 McQ;1U@Ti8TCBh>42ldW82
+R15
+32
+R16
+!i10b 1
+R17
+R41
+R42
+!i113 0
+R20
+R21
+Etb_reg_nbit
+Z43 w1738881375
+R10
+R11
+!i122 16
+R1
+Z44 8/home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd
+Z45 F/home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd
+l0
+L4 1
+VCUl:`O>kiFa_mkR7IiN[_0
+!s100 Y[Bc=f1jnY0UO:lEn3^S[1
+R15
+32
+R36
+!i10b 1
+R37
+Z46 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd|
+Z47 !s107 /home/rafatmom/CprE381/Lab2/RegFile/tb_reg.vhd|
+!i113 0
+R20
+R21
+Abehavior
+R10
+R11
+DEx4 work 11 tb_reg_nbit 0 22 CUl:`O>kiFa_mkR7IiN[_0
+!i122 16
+l27
+L7 66
+VRT;SHU5Qo[OO=1Na8gfK83
+!s100 :LacCh?VAzYb?0;U4Xz[63
+R15
+32
+R36
+!i10b 1
+R37
+R46
+R47
+!i113 0
+R20
+R21
+Etb_regfile
+Z48 w1738880729
+R23
+R10
+R11
+!i122 12
+R1
+R44
+R45
+l0
+L5 1
+V[fkZHkVRYmcYcCHRPio1m3
+!s100 ZSmA47g:bi>PYnl<XGgjQ0
+R15
+32
+Z49 !s110 1738881014
+!i10b 1
+Z50 !s108 1738881014.000000
+R46
+R47
+!i113 0
+R20
+R21
+Asim
+R23
+R10
+R11
+DEx4 work 10 tb_regfile 0 22 [fkZHkVRYmcYcCHRPio1m3
+!i122 12
+l36
+L8 77
+V1<1ORc99>Q3iEQRQ?Y;Pj0
+!s100 eBZCRkYi3Pd^Pj?MOz?1B0
+R15
+32
+R49
+!i10b 1
+R50
+R46
+R47
+!i113 0
+R20
+R21
